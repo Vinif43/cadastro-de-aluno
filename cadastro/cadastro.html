@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - aluno</title>
+    <!-- <link rel="stylesheet" href="../reset.css"> -->
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h1 class="titulo">Cadastrar Aluno</h1>
+            <hr>
+        </header>
+
+        <div class="campo">
+            <form action="../dados/dados.php" method="post">
+                <div class="cam">
+                    <label class="name" for="nome_aluno">Nome</label>
+                    <input type="text" name="nome" id="nome_aluno" >
+
+                    <label class="name" for="matricula_aluno">Matricula</label>
+                    <input type="text" name="matricula" id="matricula_aluno">
+                </div>
+
+                <div class="cem">
+                    <label for="aluno_nota1">Primeira nota</label>
+                    <input type="text" name="nota1" id="aluno_nota1" required>
+
+                    <label for="aluno_nota2">Segunda nota</label>
+                    <input type="text" name="nota2" id="aluno_nota2" required>
+                </div>
+        </div>
+                <div class="campe">
+                    <button id="botao_clicar" class="butao">Cadastrar</button>
+                    <a class="butao" href="../dados/dados.php">Lista de alunos</a>
+                </div>
+            </form> 
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="alerta.js"></script>
+</body>
+</html>
