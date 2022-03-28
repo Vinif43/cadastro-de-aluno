@@ -16,7 +16,7 @@ body{
     margin-top: 12%;
     border-radius: 10px;
     border: 2px solid #9147ff;
-    box-shadow:13px 19px 12px 11px #1b1b1b;
+    box-shadow:10px 10px 29px 14px #000000;
 }
 
 .titulo{
@@ -90,6 +90,7 @@ label{
     text-decoration: none;
     box-shadow: 2px 2px 2px #9147ff62;
     text-shadow: 1px 1px 1px rgb(0,0,0,0.5);
+    transition: 600ms all;
 }
 
 .butao:hover{
@@ -110,4 +111,22 @@ label{
     color: #9147ff62;
     background-color: #9147ff8c;
     box-shadow: inset 3px 3px 3px #9147ff62;
+}
+
+.desenvolvido{
+    text-align: center;
+    color: #9147ff;
+    margin: 50px auto -30px auto;
+}
+
+.desenvolvido:last-child{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .desenvolvido{
+        width: auto;
+        margin-left: 22px;
+    }
+    
 }
